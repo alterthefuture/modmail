@@ -25,7 +25,7 @@ class change_prefix(commands.Cog):
             collection.update_one({"_id": ctx.guild.id}, {"$set": {"prefix": new_prefix}})
             await ctx.send(embed=create_embed(f"Successfully changed guild prefix to `{new_prefix}`"))
         except:
-            await ctx.send("Failed to change prefix.")
+            await ctx.send(embed=error_embed("Failed to change prefix."))
 
 def setup(bot):
     bot.add_cog(change_prefix(bot))
