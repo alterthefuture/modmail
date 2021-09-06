@@ -11,7 +11,7 @@ When a member messages the bot it will create a channel with the name of their I
     * Custom Prefix
     * Custom Bot Activity
 * Blacklist 
-    * Blacklist users from viewing bot
+    * Blacklist users from using the bot
     * Unblacklist users
     * Show blacklisted users
 For help with these commands type `?help` 
