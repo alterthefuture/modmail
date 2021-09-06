@@ -1,7 +1,7 @@
 {
-    "token": "ODc5NTI3MTQ1ODAwNjMwMzAz.YSRBfA.88xKnFLyQtZJdaASuPVsTfaQI2M",
+    "token": "token-here",
     "mongo_url": "mongo-url",
-    "category_id": "881045332794966057",
-    "server_id": "872711854617657364", 
+    "category_id": "category-id",
+    "server_id": "server-id", 
     "bot_activity": "MY DMS!"
 }
