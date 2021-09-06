@@ -28,7 +28,7 @@ bot.remove_command(name='help')
 
 @bot.event
 async def on_connect():
-  await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,name=bot_activity))
+  await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,name="Starting..."))
 
 @bot.event
 async def on_ready():
@@ -46,7 +46,7 @@ async def on_ready():
 
     print("\n> Finished adding servers to database. Bot is ready to go!")
 
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,name=f"My DMS!"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,name=bot_activity))
 
 @bot.event
 async def on_message(message):
