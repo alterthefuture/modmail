@@ -10,6 +10,7 @@ with open("config.json") as f:
 
 token = config.get("token")
 mongo_url = config.get("mongo_url")
+bot_activity = config.get("bot_activity")
 
 cluster = MongoClient(mongo_url)
 db = cluster["main"]
@@ -27,7 +28,7 @@ bot.remove_command(name='help')
 
 @bot.event
 async def on_connect():
-  await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,name=f"Starting..."))
+  await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,name=bot_activity))
 
 @bot.event
 async def on_ready():
