@@ -44,4 +44,4 @@ For help with these commands type `?help`
   4. Enjoy!
 
 ## Credits
-This bot was made by Scritpz#0001 free to use by anyone aslong as you give credits
+This bot was made by playedyabtch free to use by anyone aslong as you give credits
