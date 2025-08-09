@@ -27,10 +27,11 @@ class help(commands.Cog):
         embed.add_field(name="Blacklist", value=f"Description: Blacklist mentioned user\nUsage: `{prefix}blacklist [@member]`", inline=False)
         embed.add_field(name="Unblacklist", value=f"Description: Unblacklist mentioned user\nUsage: `{prefix}unblacklist [@member]`", inline=False)
         embed.add_field(name="Blacklisted", value=f"Description: Shows all blacklisted members\nUsage: `{prefix}blacklisted`", inline=False)
-        embed.set_footer(text="Made by Scriptz#0001")
+        embed.set_footer(text="Made by playedyabtch")
         embed.set_thumbnail(url=self.bot.user.avatar_url)
 
         await ctx.send(embed=embed)
 
 def setup(bot):
+
     bot.add_cog(help(bot))
